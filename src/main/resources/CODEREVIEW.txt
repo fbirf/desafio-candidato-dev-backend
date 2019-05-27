@@ -1,0 +1,15 @@
+﻿Há 3 pacotes que separam cada classe de acordo com a respectiva responsabilidade.
+
+O pacote business refere-se ao padrão de projeto Business, onde suas classes detém toda a regra de negócio do sistema.
+
+O pacote factory refere-se ao padrão de projeto Factory, onde através do uso de interfaces e do polimorfismo em suas classes, geram objetos a partir de um parâmetro, tornando-se uma fábrica de objetos.
+
+O pacote pojos refere-se à classes sem um papel definido.
+
+A classe EntityFactory possui regras de negócio. Estas regras devem estar na classe ProcessRuleServices, pois esta detém a resposabilidade de guardar as regras de negócio da aplicação.
+
+A classe ThCepDetailsApplication é a responsável pela inicialização da aplicação através do Spring Boot.
+
+O arquivo application.properties é o arquivo de configuração do Spring Boot, que a propósito não há nenhuma configuração definida.
+
+A classe ThCepDetailsApplicationTests é uma classe de teste da aplicação. Só falta implementar os métodos de teste do junit para automatizar os testes unitários da aplicação. A propósito é muito útil começar desenvolvendo a partir do código de teste, assim como descreve o TDD.
